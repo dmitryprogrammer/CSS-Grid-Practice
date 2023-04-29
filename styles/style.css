@@ -13,6 +13,8 @@ ul, ol {
         'sidebar content content'
         'footer footer footer';
     grid-gap: 10px;
+    grid-template-columns: 200px 1fr 1fr;
+    padding: 10px;
 }
 
 .header {
