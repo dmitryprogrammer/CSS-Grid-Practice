@@ -1,0 +1,14 @@
+.content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.content__left {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.content__right {
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
