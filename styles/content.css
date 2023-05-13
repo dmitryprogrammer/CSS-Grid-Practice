@@ -1,6 +1,13 @@
 .content {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/3;
 }
 
 .content__left {
