@@ -1,5 +1,6 @@
 @import "hedaer.css";
 @import "sidebar.css";
+@import "content.css";
 
 ul, ol {
     list-style: none;
