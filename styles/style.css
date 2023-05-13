@@ -2,6 +2,11 @@
 @import "sidebar.css";
 @import "content.css";
 
+:root {
+    --size-desktop: 1024px;
+    --size-mobile: 425px;
+}
+
 ul, ol {
     list-style: none;
     margin: 0;
@@ -10,7 +15,7 @@ ul, ol {
 
 .container {
     display: grid;
-    grid-template:
+    grid-template-areas:
         'header header header'
         'sidebar content content'
         'footer footer footer';
@@ -37,4 +42,21 @@ ul, ol {
     grid-area: footer;
     grid-row-start: 9;
     grid-row-end: 9;
+}
+
+/*    tablet styles    */
+@media screen and (max-width: 1023px) and (min-width: 426px) {
+}
+
+/*    mobile styles    */
+@media screen and (max-width: 425px) {
+    .container-grid {
+        grid-template-areas:
+            'header'
+            'sidebar'
+            'content'
+            'footer';
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
 }
