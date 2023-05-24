@@ -10,6 +10,10 @@
     grid-column: 1/3;
 }
 
+.content__row_single {
+    grid-template-columns: 1fr;
+}
+
 .content__left {
     grid-column-start: 1;
     grid-column-end: 1;
