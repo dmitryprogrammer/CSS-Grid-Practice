@@ -21,7 +21,7 @@ ul, ol {
         'footer footer footer';
     grid-gap: 10px;
     grid-template-columns: 200px 1fr 1fr;
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
     padding: 10px;
     height: 100vh;
 }
