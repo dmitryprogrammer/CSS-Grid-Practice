@@ -1,0 +1,7 @@
+.articles-content {
+    grid-area: content;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(4, minmax(50px, 1fr));
+    gap: 10px;
+}

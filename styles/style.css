@@ -1,6 +1,7 @@
 @import "hedaer.css";
 @import "sidebar.css";
 @import "content.css";
+@import "articles.css";
 
 :root {
     --size-desktop: 1024px;
@@ -16,12 +17,11 @@ ul, ol {
 .container-grid {
     display: grid;
     grid-template-areas:
-        'header header header'
-        'sidebar content content'
-        'footer footer footer';
+        'header header'
+        'sidebar content'
+        'footer footer';
     grid-gap: 10px;
-    grid-template-columns: 200px 1fr 1fr;
-    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: 200px 1fr;
     padding: 10px;
     height: 100vh;
 }
